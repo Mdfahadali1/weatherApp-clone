@@ -1,0 +1,43 @@
+{
+    "coord": {
+      "lon": 18.444,
+      "lat": 54.2222
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 11.16,
+      "feels_like": 10.71,
+      "temp_min": 10.24,
+      "temp_max": 13.18,
+      "pressure": 997,
+      "humidity": 91
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 230
+    },
+    "clouds": {
+      "all": 0
+    },
+    "dt": 1717644843,
+    "sys": {
+      "type": 2,
+      "id": 2036370,
+      "country": "PL",
+      "sunrise": 1717640135,
+      "sunset": 1717701277
+    },
+    "timezone": 7200,
+    "id": 3095833,
+    "name": "Kolbudy",
+    "cod": 200
+  }

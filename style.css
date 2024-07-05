@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-y: auto;
+overflow-x: hidden;
+}
+
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+   background-repeat: no-repeat;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+
+
+}
+#wrapper{
+ 
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorLight1);
+}
+.heading{
+    padding-top: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.buttonsChangeWindow{
+    width: 90%;
+    max-width: 550PX;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: none;
+margin-top: 2.5rem;
+
+}
+
+@media screen and (max-width:310px){ 
+    .buttonsChangeWindow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+    }
+}
+
+.bittnstyle{
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+font-size:  1rem;
+}
+
+
+
+.your-weather {
+    background-color: rgba(219, 226, 239, 0.5);
+
+    padding: 9px 15px;
+    border-radius: 3PX;
+   
+}
+
+.garntAcessTag{
+  
+display: none;
+}
+
+.garntAcessTag.active{
+    margin-top: 3rem;
+    gap: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: var(--colorLight1);
+}
+
+.garntAcessTag button{
+    all: unset;
+    background-color: rgba(219, 226, 239, 0.5);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loadingLoader{
+    display: none;
+    /* hiding */
+}
+
+.loadingLoader.active{
+    /* render for some conditions */
+    display: block;
+height: 17rem;
+width: 17rem;
+}
+
+.searchBar-container{
+    display: none;
+}
+
+.searchBar-container.active{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0 auto;
+    margin-top: 2rem;
+   
+    width: 100%;
+    gap: 10px;
+
+
+}
+.inputboxmakingflex{
+    display: flex;
+    width: 90%;
+    max-width: 500px;
+  
+}
+
+[searchBar]{
+    height: 43px;
+    width: 100%;
+    text-align: center;
+border-radius: 10px;
+outline: none;
+border: none;
+background-color: rgba(219, 226, 239, 0.5);
+
+font-size: 1rem;
+font-weight: 500;
+color: var(--colorLight2);
+}
+
+[searchBar]:focus{
+    /* outline ki zarurath nai hai */
+    /* outline:2px solid var(--colorLight2); */
+    border: 2px solid var(--colorLight2);
+}
+[searchBar]::placeholder{
+    all: unset;
+ text-align: center;
+ color: var(--colorLight2);
+}
+
+[submitButton]{
+   background-color: transparent;
+    background-color: var(--colorDark2);
+    border: none;
+    font-size: .85rem;
+    color: #F9F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ border-radius: 100%;
+ width: 50px;
+ height: 43px;
+
+}
+
+[submitButton] img{
+    height: 19px;
+width: 19px;
+ }
+
+ .errorImage404{
+    display: none;
+ }
+ .errorImage404.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    width: 90%;
+    max-width: 450px;
+ }
+ .eroorImageText{
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .errorImage404 img{
+
+    width:  100%;
+  height: fit-content;
+ }  
+
+ .yourLocation{
+    display: none;
+
+ }
+ .yourLocation.active{
+    display: flex;
+    flex-direction: column;
+   padding-block:2rem ;
+   /* justify-content: center; */
+   align-items: center;
+ 
+ }
+
+.LocationPlace{
+    display: flex;
+    gap:8px;
+    margin-bottom: 1.4rem;
+    align-items: center;
+}
+.LocationPlace [dynamicLocationNAme]{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.LocationPlace [dynamicImage]{
+  height: 30px;
+  width: 30px;
+object-fit: contain;
+}
+
+.weatherdetails{
+    text-align: center;
+    margin-bottom:  2.7rem;
+    /* margin-top: 1rem; */
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherdetails:first-child{
+    margin-bottom: 1rem;
+}
+.weatherdetailsImage{
+    height: 4rem;
+    width: 4rem;
+
+}
+.weatherWindHumidityRain{
+    display: flex;
+   flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.4rem;
+}
+.infoweather{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+background-color: rgba(219, 226, 239, 0.5);
+  border-radius: 10px;  
+  padding: 1rem;
+    color: var(--colorLight2);
+    text-transform: uppercase;
+    width: 23rem;
+    max-width: 12rem;
+    font-size: 1.2rem;
+    
+
+}
+.infoweather img{
+    height: 50px;
+    width: 50px;
+}
+.infoweather p:last-of-type{
+text-transform: lowercase;
+}
