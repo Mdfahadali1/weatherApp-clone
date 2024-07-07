@@ -183,7 +183,7 @@ function showPosition(position){
 }
 
 grantAccessButon.addEventListener('click' , ()=>{
-alert('provide access to your current location or check network connection');
+alert('Do you want to allow current location');
 preLoactionCheck();
 
 })
